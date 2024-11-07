@@ -17,6 +17,67 @@ header{
     justify-content: center;
     gap: 5rem;
     background-color: rgb(174, 139, 139);
-    
+    /* backdrop-filter: blur(8px); */
+    color: white;
     z-index: 1000;
+    width: 100%;
+}
+
+.logo{
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-wrap: nowrap;
+    transition: .3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn button{
+    color: darkred;
+    background-color: rgb(205, 194, 194);
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border: 1px solid darkred;
+    border-radius: 8px;
+    translate: .3s ease-in-out;
+}
+.btn button:hover{
+    transform: scale(1.1);
+}
+
+.socials img{
+    width: 2rem;
+}
+
+.contacts.contact-links {
+    width: 1rem;
 }
