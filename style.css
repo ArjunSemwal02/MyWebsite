@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap');
 
+/* for everything*/
 *{
     margin: 0;
     padding: 0;
@@ -10,15 +11,17 @@
     list-style-type: none;
 }
 
+/* for body */
 body{
-    background-color: rgb(225, 166, 166);
+    background-color: rgb(160, 122, 122);
 }
 
+/* for header */
 header{
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5rem;
     background-color: rgb(174, 139, 139);
     /* backdrop-filter: blur(8px); */
@@ -27,8 +30,9 @@ header{
     width: 100%;
 }
 
+/* logo */
 .logo{
-    padding: 2rem;
+    padding: 2rem 3rem;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
@@ -43,21 +47,57 @@ header{
 .links{
     position: relative;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
 }
 .links a{
     text-decoration: none;
     color: white;
     position: relative;
 }
+.links a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, rgb(210, 188, 188), rgb(223, 187, 130));
+}
+.links a:hover::before{
+    width: 100%;
+}
 
+
+/* for menu-icon */
+header #menu-icon{
+    
+    /* display: none; */
+}
+
+/* for github button in header */
 .visit-btn{
-    padding: .5rem 1rem;
-    border-radius: 8px;
-    border: 2px solid darkred;
+    margin: auto 6rem;
+    padding: .5rem 1.5rem;
+    border-radius: 15px;
+    border: 0;
     color: darkred;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, rgb(210, 188, 188), rgb(201, 203, 193));
 }
+.visit-btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, rgb(201, 203, 193), rgb(210, 188, 188));
+}
+
+/* 223, 187, 130 */
+
 
 /* for every section */
 section{
@@ -65,7 +105,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
+
+
+
+
 
 /* for about section */
 .about-container{
@@ -96,17 +141,23 @@ section{
 }
 
 
+
+
 /* for projects section */
 .projects{
     gap: 3rem;
 }
+
+
 
 /* for education section */
 .education{
     gap: 3rem;
 }
 
+
+
 /* for contacts section */
-.contacts .contact-links {
+.contacts.contact-svg{
     width: 1rem;
 }
