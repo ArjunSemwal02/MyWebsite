@@ -10,6 +10,10 @@
     list-style-type: none;
 }
 
+body{
+    background-color: rgb(225, 166, 166);
+}
+
 header{
     position: fixed;
     display: flex;
@@ -37,6 +41,7 @@ header{
 }
 
 .links{
+    position: relative;
     display: flex;
     gap: 1rem;
 }
@@ -44,9 +49,17 @@ header{
     text-decoration: none;
     color: white;
     position: relative;
-    
 }
 
+.visit-btn{
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    border: 2px solid darkred;
+    color: darkred;
+    background-color: rgb(255, 255, 255);
+}
+
+/* for every section */
 section{
     height: 100vh;
     display: flex;
@@ -54,13 +67,18 @@ section{
     justify-content: center;
 }
 
-.image img{
+/* for about section */
+.about-container{
+    display: flex;
+    gap: 8rem;
+}
+
+.about-container .profile-picture{
     width: 20rem;
     height: 20rem;
     object-fit: cover;
     border-radius: 50%;
 }
-
 .btn button{
     color: darkred;
     background-color: rgb(205, 194, 194);
@@ -73,11 +91,22 @@ section{
 .btn button:hover{
     transform: scale(1.1);
 }
-
 .socials img{
     width: 2rem;
 }
 
-.contacts.contact-links {
+
+/* for projects section */
+.projects{
+    gap: 3rem;
+}
+
+/* for education section */
+.education{
+    gap: 3rem;
+}
+
+/* for contacts section */
+.contacts .contact-links {
     width: 1rem;
 }
