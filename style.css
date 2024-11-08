@@ -79,25 +79,24 @@ header #menu-icon{
 /* for github button in header */
 .visit-btn{
     margin: auto 6rem;
-    padding: .5rem 1.5rem;
+    padding: .5rem 2rem;
     border-radius: 15px;
     border: 0;
-    color: darkred;
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
     text-wrap: nowrap;
     transition: .3s ease-in-out;
-    background: linear-gradient(to right, rgb(210, 188, 188), rgb(201, 203, 193));
+    background: linear-gradient(to right, rgb(187, 67, 67), rgb(82, 148, 233));
 }
 .visit-btn:hover{
     transform: scale(1.1);
-    background: linear-gradient(to right, rgb(201, 203, 193), rgb(210, 188, 188));
+    background: linear-gradient(to right, rgb(82, 148, 233), rgb(187, 67, 67));
 }
 
 /* 223, 187, 130 */
-
+/* 210, 188, 188 */
 
 /* for every section */
 section{
@@ -115,6 +114,7 @@ section{
 /* for about section */
 .about-container{
     display: flex;
+    align-items: center;
     gap: 8rem;
 }
 
@@ -124,20 +124,24 @@ section{
     object-fit: cover;
     border-radius: 50%;
 }
-.btn button{
+.btn-group button{
     color: darkred;
-    background-color: rgb(205, 194, 194);
+    background-color: rgb(255, 255, 255);
     padding: .5rem 1rem;
     margin: .5rem;
-    border: 1px solid darkred;
+    border: 2px solid darkred;
     border-radius: 8px;
-    translate: .3s ease-in-out;
+    transition: .2s ease-in-out;
+    font-size: 1rem;
+    font-weight: 500;
 }
-.btn button:hover{
+.btn-group button:hover{
     transform: scale(1.1);
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(146, 48, 48);
 }
-.socials img{
-    width: 2rem;
+.socials i{
 }
 
 
@@ -153,8 +157,25 @@ section{
 /* for education section */
 .education{
     gap: 3rem;
+    display: flex;
+    flex-direction: column;
 }
-
+.ed-qual{
+    display: flex;
+    gap: .3rem;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(114, 68, 68);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    padding: 2rem;
+    width: 50%;
+    text-wrap: wrap;
+}
+.ed-qual span{
+    font-style: italic;
+    justify-content: end;
+}
 
 
 /* for contacts section */
