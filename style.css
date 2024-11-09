@@ -89,6 +89,7 @@ header #menu-icon{
     text-wrap: nowrap;
     transition: .3s ease-in-out;
     background: linear-gradient(to right, rgb(187, 67, 67), rgb(82, 148, 233));
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 }
 .visit-btn:hover{
     transform: scale(1.1);
@@ -105,10 +106,13 @@ header #menu-icon{
 /* for every section */
 section{
     height: 100vh;
+    width: 100%;
+    padding: 5rem 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    position: relative;
 }
 
 
@@ -121,8 +125,8 @@ section{
     align-items: center;
     gap: 8rem;
 }
-
-.about-container .profile-picture{
+/* for profile picture*/
+.profile-picture{
     width: 20rem;
     height: 20rem;
     object-fit: cover;
@@ -174,6 +178,11 @@ i:hover{
 /* for projects section */
 .projects{
     gap: 3rem;
+    flex-direction: column;
+}
+.projects-group{
+    display: flex;
+    gap: 2rem;
 }
 .projects .app-card{
     background-color: rgb(114, 68, 68);
@@ -183,6 +192,18 @@ i:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.projects .app-card:hover{
+    color: darkred;
+    background-color: rgb(213, 192, 192);
+    transform: scale(1.1);
+}
+.app-shot{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
 }
 
 
@@ -194,19 +215,26 @@ i:hover{
 .education{
     gap: 3rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap: 3rem;
 }
-.ed-qual{
+.ed-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+}
+.ed-card{
     display: flex;
     gap: .3rem;
     background-color: rgb(114, 68, 68);
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-    border-radius: 100px;
+    border-radius: 50px;
     padding: 2rem;
-    width: 50%;
     text-wrap: wrap;
 }
-.ed-qual span{
+.ed-card span{
     font-style: italic;
 }
 
