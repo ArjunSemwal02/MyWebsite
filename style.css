@@ -156,11 +156,19 @@ section{
     font-size: 1.8rem;
     font-weight: 600;
 }
+.btn-group{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .btn-group button{
     color: darkred;
     background-color: rgb(255, 255, 255);
     padding: .5rem 1rem;
     margin: .5rem;
+    width: 6rem;
     border: 2px solid darkred;
     border-radius: 1.4rem;
     transition: .2s ease-in-out;
@@ -170,7 +178,7 @@ section{
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
 }
 .btn-group button:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: white;
     border: 2px solid white;
     background-color: rgb(146, 48, 48);
@@ -183,7 +191,7 @@ section{
     cursor: pointer;
 }
 i{
-    font-size: 2rem;
+    font-size: 2.5rem;
     transition: .2s ease-in-out;
 }
 i:hover{
@@ -200,18 +208,25 @@ i:hover{
 
 
 /* for projects section */
-.projects{
-    gap: 3rem;
-    flex-direction: column;
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 500;
 }
 .projects-group{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-.projects .app-card{
+.app-card{
     background-color: rgb(114, 68, 68);
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 3rem;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
     display: flex;
     flex-direction: column;
@@ -222,11 +237,11 @@ i:hover{
 .projects .app-card:hover{
     color: darkred;
     background-color: rgb(213, 192, 192);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .app-shot{
     width: 15rem;
-    height: 15rem;
+    height: 8rem;
     object-fit: cover;
 }
 
@@ -236,30 +251,39 @@ i:hover{
 
 
 /* for education section */
-.education{
-    gap: 3rem;
+.ed-container{
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     gap: 3rem;
 }
 .ed-info{
     display: flex;
     flex-direction: column;
-    width: 40%;
     gap: 2rem;
 }
 .ed-card{
-    display: flex;
-    gap: .3rem;
+    text-align: center;
     background-color: rgb(114, 68, 68);
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
-    border-radius: 50px;
-    padding: 2rem;
+    border-radius: 10rem;
+    border: 2px solid white;
+    padding: 3rem;
     text-wrap: wrap;
+    font-size: 1.3rem;
+    transition: .3s ease-in-out;
 }
-.ed-card span{
+.ed-card:hover{
+    background-color: white;
+    border: 2px solid darkred;
+    color: darkred;
+}
+.ed-card .ed-details{
+    font-weight: bold;
+}
+.ed-card .duration{
     font-style: italic;
+    font-size: 1rem;
 }
 
 
@@ -268,6 +292,5 @@ i:hover{
 
 
 /* for contacts section */
-.contacts.contact-svg{
-    width: 1rem;
+.contacts{
 }
