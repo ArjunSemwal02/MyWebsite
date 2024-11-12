@@ -30,7 +30,6 @@ header{
     width: 100%;
     height: 10vh;
 }
-
 /* logo */
 .logo{
     padding: 0.5rem 4rem;
@@ -44,7 +43,6 @@ header{
 .logo:hover{
     transform: scale(1.1);
 }
-
 .links{
     position: relative;
     display: flex;
@@ -69,13 +67,11 @@ header{
 .links a:hover::before{
     width: 100%;
 }
-
 /* for menu-icon */
 header #menu-icon{
     font-size: 2rem;
     display: none;
 }
-
 /* for github button in header */
 .visit-btn{
     margin: auto 6rem;
@@ -122,6 +118,11 @@ section{
     text-align: center;
     gap: 2rem;
   }
+.icons{
+    color: white;
+}
+
+
 
 
 
@@ -189,7 +190,6 @@ section{
     border: 2px solid white;
     background-color: rgb(146, 48, 48);
 }
-
 .socials{
     text-align: center;
     word-spacing: 1rem;
