@@ -118,8 +118,15 @@ section{
     text-align: center;
     gap: 2rem;
   }
+
+  /* for icons */
 .icons{
     color: white;
+    font-size: 2.5rem;
+    transition: .2s ease-in-out;
+}
+.icons:hover{
+    transform: scale(1.2);
 }
 
 
@@ -196,13 +203,6 @@ section{
     padding: .5rem;
     cursor: pointer;
 }
-i{
-    font-size: 2.5rem;
-    transition: .2s ease-in-out;
-}
-i:hover{
-    transform: scale(1.2);
-}
 
 
 
@@ -237,10 +237,23 @@ i:hover{
     align-items: center;
     transition: .3s ease-in-out;
 }
+.app-title{
+    font-size: 1.2rem;
+}
 .projects .app-card:hover{
     color: darkred;
     background-color: rgb(213, 192, 192);
-    transform: scale(1.05);
+    transform: translateY(-10px)scale(1.02);
+}
+.projects .app-card:hover button{
+    color: white;
+    border: 2px solid white;
+    background-color: darkred;
+}
+.projects .app-card:hover button:hover{
+    color: darkred;
+    border: 2px solid darkred;
+    background-color: white;
 }
 .app-shot{
     width: 15rem;
@@ -300,6 +313,22 @@ i:hover{
 
 
 
+
+
 /* for contacts section */
 .contacts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
 }
