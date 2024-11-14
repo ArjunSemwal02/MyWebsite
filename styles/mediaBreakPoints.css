@@ -85,6 +85,7 @@
         border-radius: 50%;
     }
 }
+
 @media(max-width: 720px){
     header{
         height: 5vh;
@@ -93,7 +94,22 @@
         display: block;
     }
     .links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(104, 30, 30, 0.9);
+        top: 100%;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 50vw;
+        left: 50%;
+        transform: translateX(-50%);
         display: none;
+    }
+    .links.active{
+        display: flex;
     }
     .visit-btn{
         display: none;
