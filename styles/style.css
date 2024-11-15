@@ -321,8 +321,9 @@ section{
     flex-direction: column;
 }
 .my-email{
+    position: absolute;
     display: none;
-    margin: .3rem;
+    top: 53%;
 }
 .my-email.active{
     display: block;

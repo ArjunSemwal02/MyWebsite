@@ -92,6 +92,9 @@
     }
     header #menu-icon{
         display: block;
+        position: absolute;
+        right: 10%;
+        top: 10%;
     }
     .links{
         position: absolute;
