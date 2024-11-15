@@ -24,7 +24,6 @@ header{
     justify-content: space-between;
     gap: 5rem;
     background-color: rgb(174, 139, 139);
-    /* backdrop-filter: blur(8px); */
     color: white;
     z-index: 1000;
     width: 100%;
@@ -320,6 +319,13 @@ section{
     position: relative;
     display: flex;
     flex-direction: column;
+}
+.my-email{
+    display: none;
+    margin: .3rem;
+}
+.my-email.active{
+    display: block;
 }
 .footer{
     position: absolute;
