@@ -123,6 +123,9 @@
     .projects{
         height: 200vh;
     }
+    .footer{
+        bottom: 10%;
+    }
 }
 
 @media(max-width: 598px){
