@@ -330,7 +330,7 @@ section{
 }
 .footer{
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: 100%;
     display: flex;
     justify-content: center;

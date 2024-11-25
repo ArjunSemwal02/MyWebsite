@@ -11,3 +11,11 @@ menuIconElement.onclick = () => {
 emailIconElement.onclick = () => {
     myEmailElement.classList.toggle('active');
 }
+
+function visitGithub() {
+    window.open('https://github.com/ArjunSemwal02');
+}
+
+function visitLinkedin() {
+    window.open('https://www.linkedin.com/in/arjun-semwal-851633201/');
+}
