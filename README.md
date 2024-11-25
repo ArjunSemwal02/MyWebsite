@@ -1,1 +1,1 @@
-This is just my portfolio website which i'm writing using js.
+This is just my portfolio website which i'm writing using HTML, CSS and JS.
