@@ -226,7 +226,7 @@ section{
 }
 .app-card{
     background-color: rgb(114, 68, 68);
-    padding: 2rem;
+    padding: 1.5rem;
     gap: .5rem;
     border-radius: 3rem;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .3);
