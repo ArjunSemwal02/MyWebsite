@@ -237,7 +237,11 @@ section{
     transition: .3s ease-in-out;
 }
 .app-title{
-    font-size: 1.2rem;
+    background: linear-gradient(to right, rgb(255, 52, 52), rgb(255, 242, 0));
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 .projects .app-card:hover{
     color: darkred;
