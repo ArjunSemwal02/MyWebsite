@@ -240,8 +240,8 @@ section{
     background: linear-gradient(to right, rgb(255, 52, 52), rgb(255, 242, 0));
     background-clip: text;
     color: transparent;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
 }
 .projects .app-card:hover{
     color: darkred;
