@@ -1,44 +1,44 @@
-export const projectsData = [
+export const ProjectsData = [
     {
         id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        title: "Stream-Vids",
+        imgUrl: "../assets/projects-screenshot/Screenshot (59).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     },
     {
-        id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        id: 1,
+        title: "Stream-Vids",
+        imgUrl: "assets/projects-screenshot/Screenshot (31).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     },
     {
-        id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        id: 2,
+        title: "Stream-Vids",
+        imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     },
     {
-        id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        id: 3,
+        title: "Stream-Vids",
+        imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     },
     {
-        id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        id: 4,
+        title: "Stream-Vids",
+        imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     },
     {
-        id: 0,
-        title: "",
-        imgUrl: "",
-        live: "",
-        code: ""
+        id: 5,
+        title: "Stream-Vids",
+        imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+        live: "https://arjunsemwal02.github.io/Stream-Vids/",
+        code: "https://arjunsemwal02.github.io/Stream-Vids/"
     }
 ]

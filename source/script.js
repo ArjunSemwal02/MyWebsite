@@ -1,41 +1,71 @@
-import { projectsData } from "../data/projectData"
+import { ProjectsData } from "../data/projectData/ProjectsData.js"
+
+
+// const projectsData = [
+//     {
+//         id: 0,
+//         title: "Stream-Vids",
+//         imgUrl: "../assets/projects-screenshot/Screenshot (59).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     },
+//     {
+//         id: 1,
+//         title: "Stream-Vids",
+//         imgUrl: "assets/projects-screenshot/Screenshot (31).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     },
+//     {
+//         id: 2,
+//         title: "Stream-Vids",
+//         imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     },
+//     {
+//         id: 3,
+//         title: "Stream-Vids",
+//         imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     },
+//     {
+//         id: 4,
+//         title: "Stream-Vids",
+//         imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     },
+//     {
+//         id: 5,
+//         title: "Stream-Vids",
+//         imgUrl: "assets/projects-screenshot/Screenshot (59).png",
+//         live: "https://arjunsemwal02.github.io/Stream-Vids/",
+//         code: "https://arjunsemwal02.github.io/Stream-Vids/"
+//     }
+// ]
+
+// const {id, title, imgUrl, live, code} = projectsData
 
 const menuIconElement = document.querySelector('#menu-icon');
 const linksListElement = document.querySelector('.links');
-// const emailIconElement = document.querySelector('.email-icon');
-// const myEmailElement = document.querySelector('.my-email');
 
-// const projectsSection = document.getElementById('projects')
-const projectsGroup = document.getElementsByClassName('projects-group')
+const projectsGroup = document.querySelector('.projects-group')
 
-const projectsGroupElem = document.createElement('div')
-projectsGroupElem.classList.add("app-card")
-
-const projectsTitleElem = document.createElement('p')
-projectsTitleElem.classList.add("app-title")
-
-const projectsImgElem = document.createElement('img')
-projectsImgElem.classList.add("app-shot")
-
-const projectsButtonsGroupElem = document.createElement('div')
-projectsButtonsGroupElem.classList.add("btn-group")
-
-
-
-function createProjectsCard() {
-    projectsGroupElem.appendChild(projectsTitleElem)
-    projectsGroupElem.appendChild(projectsImgElem)
-    projectsGroupElem.appendChild(projectsButtonsGroupElem)
-
-    // const projectsCard = `<div class="app-card">
-    //                 <p class="app-title">${projectsData.title}</p>
-    //                 <img src=${projectsData.imUrl} alt="app-1" class="app-shot">
-    //                 <div class="btn-group">
-    //                     <a href=${projectsData.live} target="_blank"><button>Live</button></a>
-    //                     <a href=${projectsData.live} target="_blank"><button>Github</button></a>
-    //                 </div>
-    //             </div>`
+function createProjectsCard(data) {
+    return `<div class="app-card" key=${data.id}>
+                    <p class="app-title">${data.title}</p>
+                    <img src=${data.imgUrl} alt="app-1" class="app-shot">
+                    <div class="btn-group">
+                        <a href=${data.live} target="_blank"><button>Live</button></a>
+                        <a href=${data.code} target="_blank"><button>Github</button></a>
+                    </div>
+                </div>`
 }
+
+// projectsGroup.appendChild(projectsData.map(data => (createProjectsCard(data))))
+projectsGroup.innerHTML = ProjectsData.map(data => (createProjectsCard(data)))
 
 
 menuIconElement.onclick = () => {
