@@ -6,3 +6,9 @@ const linksListElement = document.querySelector('.links');
 menuIconElement.onclick = () => {
     linksListElement.classList.toggle('active');
 }
+
+document.onclick = (e) => {
+    if(!menuIconElement.contains(e.target) && !linksListElement.contains(e.target)){
+        linksListElement.classList.remove('active');
+    }
+}

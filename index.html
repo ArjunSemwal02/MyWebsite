@@ -1,103 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyWebsite</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/mediaBreakPoints.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaBreakPoints.css" />
     <script src="./source/script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <a href="#about" class="logo"><span>Arjun Semwal</span></a>
-        <ul class="links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <a href="https://github.com/ArjunSemwal02" target="_blank"><button id="" class="visit-btn">Github</button></a>
+      <a href="#about" class="logo"><span>Arjun Semwal</span></a>
+      <ul class="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <a href="https://github.com/ArjunSemwal02" target="_blank"
+        ><button id="" class="visit-btn">Github</button></a
+      >
     </header>
 
     <section id="about" class="about">
-        <div class="about-container">
-            <img src="assets/pictures/IMG_20241113_172013~.jpg" alt="profile-picture" class="profile-picture">
-            <div class="info-box">
-                <div>
-                    <h3>Hi, I'm</h3>
-                    <h1>Arjun Semwal</h1>
-                    <span class="niche">Frontend Developer</span>
-                </div>
-                
-                <div class="btn-group">
-                    <a href="./assets/pdf(s)/ResumeAj.pdf" target="_blank"><button>Resume</button></a>
-                    <a href="https://www.linkedin.com/in/arjun-semwal-851633201/" target="_blank"><button onclick="">Linkedin</button></a>
-                </div>
-                <div class="socials">
-                    <a href="https://github.com/ArjunSemwal02" target="_blank"><i class="fa-brands fa-github icons"></i></a>
-                    <a href="https://www.linkedin.com/in/arjun-semwal-851633201/" target="_blank"><i class="fa-brands fa-linkedin icons"></i></a>
-                </div>
-            </div>
+      <div class="about-container">
+        <img
+          src="assets/pictures/IMG_20241113_172013~.jpg"
+          alt="profile-picture"
+          class="profile-picture"
+        />
+        <div class="info-box">
+          <div>
+            <h3>Hi, I'm</h3>
+            <h1>Arjun Semwal</h1>
+            <span class="niche">Software Developer</span>
+          </div>
+
+          <div class="btn-group">
+            <a href="./assets/pdf(s)/ResumeAj.pdf" target="_blank"
+              ><button>Resume</button></a
+            >
+            <a
+              href="https://www.linkedin.com/in/arjun-semwal-851633201/"
+              target="_blank"
+              ><button onclick="">Linkedin</button></a
+            >
+          </div>
+          <div class="socials">
+            <a href="https://github.com/ArjunSemwal02" target="_blank"
+              ><i class="fa-brands fa-github icons"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/arjun-semwal-851633201/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin icons"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="projects" class="projects">
-        <div class="projects-container container">
-            <h2 class="title">Recently created Web-Apps</h2>
-            <div class="projects-group">
-                <div class="app-card">
-                    <p class="app-title">Stream-Vids</p>
-                    <img src="assets/projects-screenshot/Screenshot (59).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://arjunsemwal02.github.io/Stream-Vids/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/Stream-Vids.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <div class="app-card">
-                    <p class="app-title">Shopping-Cart</p>
-                    <img src="assets/projects-screenshot/Screenshot (60).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://arjunsemwal02.github.io/Shopping-Cart/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/Shopping-Cart.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <div class="app-card">
-                    <p class="app-title">Select-Component</p>
-                    <img src="assets/projects-screenshot/Screenshot (58).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://select-component-by-aj.netlify.app/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/Select-Component.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <div class="app-card">
-                    <p class="app-title">Bearded-Doodler</p>
-                    <img src="assets/projects-screenshot/Screenshot (44).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://arjunsemwal02.github.io/BeardedDoodler/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/BeardedDoodler.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <div class="app-card">
-                    <p class="app-title">Sorted-Table</p>
-                    <img src="assets/projects-screenshot/Screenshot (45).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://arjunsemwal02.github.io/Sorted-Table/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/Sorted-Table.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <div class="app-card">
-                    <p class="app-title">Testimonials</p>
-                    <img src="assets/projects-screenshot/Screenshot (31).png" alt="app-1" class="app-shot">
-                    <div class="btn-group">
-                        <a href="https://arjunsemwal02.github.io/Testimonials/" target="_blank"><button>Live</button></a>
-                        <a href="https://github.com/ArjunSemwal02/Testimonials.git" target="_blank"><button>Github</button></a>
-                    </div>
-                </div>
-                <!-- <div class="app-card">
+      <div class="projects-container container">
+        <h2 class="title">Recently created Web-Apps</h2>
+        <div class="projects-group">
+          <div class="app-card">
+            <p class="app-title">Stream-Vids</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (59).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://arjunsemwal02.github.io/Stream-Vids/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/Stream-Vids.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <div class="app-card">
+            <p class="app-title">Shopping-Cart</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (60).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://arjunsemwal02.github.io/Shopping-Cart/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/Shopping-Cart.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <div class="app-card">
+            <p class="app-title">Select-Component</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (58).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://select-component-by-aj.netlify.app/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/Select-Component.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <div class="app-card">
+            <p class="app-title">Bearded-Doodler</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (44).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://arjunsemwal02.github.io/BeardedDoodler/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/BeardedDoodler.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <div class="app-card">
+            <p class="app-title">Sorted-Table</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (45).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://arjunsemwal02.github.io/Sorted-Table/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/Sorted-Table.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <div class="app-card">
+            <p class="app-title">Testimonials</p>
+            <img
+              src="assets/projects-screenshot/Screenshot (31).png"
+              alt="app-1"
+              class="app-shot"
+            />
+            <div class="btn-group">
+              <a
+                href="https://arjunsemwal02.github.io/Testimonials/"
+                target="_blank"
+                ><button>Live</button></a
+              >
+              <a
+                href="https://github.com/ArjunSemwal02/Testimonials.git"
+                target="_blank"
+                ><button>Github</button></a
+              >
+            </div>
+          </div>
+          <!-- <div class="app-card">
                     <p class="app-title">Text Animation</p>
                     <img src="assets/projects-screenshot/Screenshot (32).png" alt="app-2" class="app-shot">
                     <div class="btn-group">
@@ -137,42 +229,70 @@
                         <a href="https://github.com/ArjunSemwal02/sayHello.git" target="_blank"><button>Github</button></a>
                     </div>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
 
     <section id="education" class="education">
-        <div class="education-container container">
-            <h2 class="title">Education</h2>
-            <div class="ed-card-group">
-                <div class="ed-info">
-                    <div class="ed-card">
-                        <p><span class="qual ed-details">B.Tech</span> in <span class="stream ed-details">Computer Science and Engineering</span><br><span class="duration">Grad. July 2023</span></p><br>
-                        <p>Govind Ballabh Pant Inst. of Eng. and Technology (UTU), Pauri garhwal, Uttarakhand</p>
-                    </div>
-                    <div class="ed-card">
-                        <p><span class="qual ed-details">Diploma</span> in <span class="stream ed-details">Information Technology</span><br><span class="duration">Cmpl. Oct 2020</span></p><br>
-                        <p>Govt. Polytechnic Narendra Nagar (UBTER), Tehri Garhwal, Uttarakhand</p>
-                    </div>
-                </div>
-                <img src="assets/pictures/IMG_20241113_172013~.jpg" alt="profile-picture2" class="profile-picture">
+      <div class="education-container container">
+        <h2 class="title">Education</h2>
+        <div class="ed-card-group">
+          <div class="ed-info">
+            <div class="ed-card">
+              <p>
+                <span class="qual ed-details">B.Tech</span> in
+                <span class="stream ed-details"
+                  >Computer Science and Engineering</span
+                ><br /><span class="duration">Grad. July 2023</span>
+              </p>
+              <br />
+              <p>
+                Govind Ballabh Pant Inst. of Eng. and Technology (UTU), Pauri
+                garhwal, Uttarakhand
+              </p>
             </div>
+            <div class="ed-card">
+              <p>
+                <span class="qual ed-details">Diploma</span> in
+                <span class="stream ed-details">Information Technology</span
+                ><br /><span class="duration">Cmpl. Oct 2020</span>
+              </p>
+              <br />
+              <p>
+                Govt. Polytechnic Narendra Nagar (UBTER), Tehri Garhwal,
+                Uttarakhand
+              </p>
+            </div>
+          </div>
+          <img
+            src="assets/pictures/IMG_20241113_172013~.jpg"
+            alt="profile-picture2"
+            class="profile-picture"
+          />
         </div>
+      </div>
     </section>
 
     <section id="contacts" class="contacts">
-        <div class="contact-svg socials">
-            <a href="mailto:arjunsemwal02@gmail.com"><i class="fa-solid fa-envelope icons email-icon"></i></a>
-            <a href="https://github.com/ArjunSemwal02" target="_blank"><i class="fa-brands fa-github icons"></i></a>
-            <a href="https://www.linkedin.com/in/arjun-semwal-851633201/" target="_blank"><i class="fa-brands fa-linkedin icons"></i></a>
-        </div>
-        <div class="my-email">
-            <p>arjunsemwal02@gmail.com</p>
-        </div>
-        <div class="footer">
-            <p>Made with <i class="fa-solid fa-heart heart"></i> by Arjun Semwal</p>
-        </div>
+      <div class="contact-svg socials">
+        <a href="mailto:arjunsemwal02@gmail.com"
+          ><i class="fa-solid fa-envelope icons email-icon"></i
+        ></a>
+        <a href="https://github.com/ArjunSemwal02" target="_blank"
+          ><i class="fa-brands fa-github icons"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/arjun-semwal-851633201/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin icons"></i
+        ></a>
+      </div>
+      <div class="my-email">
+        <p>arjunsemwal02@gmail.com</p>
+      </div>
+      <div class="footer">
+        <p>Made with <i class="fa-solid fa-heart heart"></i> by Arjun Semwal</p>
+      </div>
     </section>
-
-</body>
+  </body>
 </html>
