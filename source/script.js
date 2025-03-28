@@ -1,4 +1,4 @@
-import { ProjectsData } from "../data/projectData/ProjectsData.js"
+import { ProjectsData } from "../data/projectData";
 
 
 // const projectsData = [
@@ -69,6 +69,7 @@ projectsGroup.innerHTML = ProjectsData.map(data => (createProjectsCard(data)))
 
 
 menuIconElement.onclick = () => {
+    debugger;
     linksListElement.classList.toggle('active');
 }
 
