@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 3f808da62ce3db2fde16f673895d080b14ff46b2
 }

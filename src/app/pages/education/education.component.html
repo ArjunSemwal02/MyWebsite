@@ -1,0 +1,27 @@
+<section id="education" class="education">
+  <div class="education-container container">
+    <h2 class="title">Education</h2>
+    <div class="ed-card-group">
+      <div class="ed-info">
+        @for(edu of educationList; track edu){
+        <div class="ed-card">
+          <p>
+            <span class="qual ed-details">{{ edu.programme }}</span> in
+            <span class="stream ed-details">{{ edu.specialization }}</span
+            ><br /><span class="duration">{{ edu.duration }}</span>
+          </p>
+          <br />
+          <p>
+            {{ edu.institution }}
+          </p>
+        </div>
+        }
+      </div>
+      <img
+        src="/pictures/IMG_20241113_172013~.jpg"
+        alt="profile-picture2"
+        class="profile-picture"
+      />
+    </div>
+  </div>
+</section>
