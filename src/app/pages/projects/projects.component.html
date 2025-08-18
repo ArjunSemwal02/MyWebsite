@@ -2,23 +2,13 @@
   <div class="projects-container container">
     <h2 class="title">Recently created Web-Apps</h2>
     <div class="projects-group">
-      @for (item of items; track $index) {
+      @for (pr of projects$; track $index) {
       <div class="app-card">
-        <p class="app-title">Stream-Vids</p>
-        <img
-          src="assets/projects-screenshot/Screenshot (59).png"
-          alt="app-1"
-          class="app-shot"
-        />
+        <p class="app-title">{{ pr.title }}</p>
+        <img [src]="pr.imgUrl" [alt]="pr.title" class="app-shot" />
         <div class="btn-group">
-          <a href="https://arjunsemwal02.github.io/Stream-Vids/" target="_blank"
-            ><button>Live</button></a
-          >
-          <a
-            href="https://github.com/ArjunSemwal02/Stream-Vids.git"
-            target="_blank"
-            ><button>Github</button></a
-          >
+          <a [href]="pr.url" target="_blank"><button>Live</button></a>
+          <a [href]="pr.sourceCode" target="_blank"><button>Github</button></a>
         </div>
       </div>
       }
