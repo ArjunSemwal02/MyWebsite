@@ -3,33 +3,22 @@
     <h2 class="title">Education</h2>
     <div class="ed-card-group">
       <div class="ed-info">
+        @for(edu of educationList; track edu){
         <div class="ed-card">
           <p>
-            <span class="qual ed-details">B.Tech</span> in
-            <span class="stream ed-details"
-              >Computer Science and Engineering</span
-            ><br /><span class="duration">Grad. July 2023</span>
+            <span class="qual ed-details">{{ edu.programme }}</span> in
+            <span class="stream ed-details">{{ edu.specialization }}</span
+            ><br /><span class="duration">{{ edu.duration }}</span>
           </p>
           <br />
           <p>
-            Govind Ballabh Pant Inst. of Eng. and Technology (UTU), Pauri
-            garhwal, Uttarakhand
+            {{ edu.institution }}
           </p>
         </div>
-        <div class="ed-card">
-          <p>
-            <span class="qual ed-details">Diploma</span> in
-            <span class="stream ed-details">Information Technology</span
-            ><br /><span class="duration">Cmpl. Oct 2020</span>
-          </p>
-          <br />
-          <p>
-            Govt. Polytechnic Narendra Nagar (UBTER), Tehri Garhwal, Uttarakhand
-          </p>
-        </div>
+        }
       </div>
       <img
-        src="assets/pictures/IMG_20241113_172013~.jpg"
+        src="/pictures/IMG_20241113_172013~.jpg"
         alt="profile-picture2"
         class="profile-picture"
       />
