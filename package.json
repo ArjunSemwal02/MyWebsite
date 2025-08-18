@@ -1,15 +1,14 @@
 {
   "name": "mywebsite",
   "version": "0.0.0",
-  "homepage": "https://github.com/ArjunSemwal02/MyWebsite.git",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production --base-href /MyWebsite/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist/mywebsite"
   },
   "private": true,
   "dependencies": {

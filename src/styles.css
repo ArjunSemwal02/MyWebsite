@@ -52,6 +52,82 @@ section{
 
 
 
+/* for header */
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    background-color: rgb(174, 139, 139);
+    color: white;
+    z-index: 1000;
+    width: 100%;
+    height: 10vh;
+}
+/* logo */
+.logo{
+    padding: 0.5rem 4rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-wrap: nowrap;
+    transition: .3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.links{
+    position: relative;
+    display: flex;
+    gap: 4rem;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.links a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, rgb(255, 52, 52), rgb(255, 242, 0));
+}
+.links a:hover::before{
+    width: 100%;
+}
+/* for menu-icon */
+header #menu-icon{
+    font-size: 2rem;
+    display: none;
+}
+/* for github button in header */
+.visit-btn{
+    margin: auto 6rem;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+    color: rgb(122, 40, 40);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, rgb(255, 52, 52), rgb(255, 242, 0));
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+.visit-btn:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right, rgb(255, 242, 0), rgb(255, 52, 52));
+}
+
+
 
 /* for about section */
 .about-container{
