@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ProjectsService } from '../../services/projects/projects.service';
+import { Projects } from '../../models/Projects';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-<<<<<<< HEAD
-  
-=======
+  private projectService = inject(ProjectsService);
 
->>>>>>> 3f808da62ce3db2fde16f673895d080b14ff46b2
+  projects$: any;
+
+  ngOnInit() {
+    this.projects$ = this.projectService.getProjects();
+  }
 }
