@@ -3,7 +3,7 @@
     <h2 class="title">Education</h2>
     <div class="ed-card-group">
       <div class="ed-info">
-        @for(edu of educationList; track edu){
+        @for(edu of educationList; track $index){
         <div class="ed-card">
           <p>
             <span class="qual ed-details">{{ edu.programme }}</span> in
