@@ -209,7 +209,6 @@ section{
     background-color: rgb(114, 68, 68);
     box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     border-radius: 2rem;
-    /* border: 2px solid white; */
     padding: 3rem;
     text-wrap: wrap;
     font-size: 1.3rem;
@@ -218,7 +217,7 @@ section{
 .ed-card:hover{
     background-color: rgb(255, 255, 255);
     opacity: .6;
-
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, .3);
     /* border: 2px solid darkred; */
     color: rgb(80, 2, 2);
 }
@@ -228,6 +227,7 @@ section{
     background: linear-gradient(to right, rgb(255, 52, 52), rgb(255, 242, 0));
     background-clip: text;
     color: transparent;
+    transition: .3s ease-in-out;
 }
 .ed-card:hover .ed-details{
     background: linear-gradient(to right, rgb(255, 52, 52), rgb(186, 167, 0));
