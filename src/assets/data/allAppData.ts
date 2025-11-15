@@ -1,4 +1,4 @@
-import { Projects } from "../models/Projects";
+import { Projects } from "../../app/models/Projects";
 
 export class ProjectsData {
     static projects: Projects[] = [

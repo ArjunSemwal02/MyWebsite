@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SocialsService } from '../../services/socials/socials.service';
+import { ProfileService } from '../../services/profile/profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent {
+
+  socialService = inject(SocialsService);
+  profileService = inject(ProfileService);
+
+  myDetails = this.profileService.myDetails;
+  socials$ = this.socialService.socialLinks;
+
 
 }
