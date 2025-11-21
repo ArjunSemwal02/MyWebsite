@@ -1,21 +1,23 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import ProjectsData from '../../../assets/data/appData.json';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { ProjectsData } from '../../../assets/data/allAppData';
+import { Projects } from '../../models/Projects';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProjectsService {
+  // // importing from the appData.json file
+  // private projectsData = ProjectsData ;
 
-  // private projectsData  = '../../data/appData';
-  // appData = '../../data/appData';
-  // appData = ProjectsData.projects ;
+  // // import from the allProjectsData.ts file
+  private projectsData: Projects[] = ProjectsData.projects;
 
-  // private projectsData = ProjectsData.projects;
-  // private projectsData = this.appData ;
-  private projectsData = ProjectsData ;
+  prjojectDataSubject = new BehaviorSubject<Projects[]>(this.projectsData);
+  projectsData$ = this.prjojectDataSubject.asObservable();
 
   getProjects(): Observable<any> {
-    return of(this.projectsData);
+    // return of(this.projectsData$);
+    return this.projectsData$;
   }
 }

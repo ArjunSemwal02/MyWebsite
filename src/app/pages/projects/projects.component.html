@@ -2,15 +2,15 @@
   <div class="projects-container container">
     <h2 class="title">Recently created Web-Apps</h2>
     <div class="projects-group">
-      @for(pr of projects$ | paginate: { itemsPerPage: 6, currentPage: p };
+      @for(pr of projects$ | paginate: { itemsPerPage: 4, currentPage: p };
       track $index) {
       <div class="app-card">
-        <!-- <p class="app-title">{{ pr.title }}</p>
+        <p class="app-title">{{ pr.title }}</p>
         <img [src]="pr.imgUrl" [alt]="pr.title" class="app-shot" />
         <div class="btn-group">
           <a [href]="pr.url" target="_blank"><button>Live</button></a>
           <a [href]="pr.sourceCode" target="_blank"><button>Github</button></a>
-        </div> -->
+        </div>
       </div>
       } jksdfhhjsf
       <!-- <div class="app-card">

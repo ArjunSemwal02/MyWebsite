@@ -1,1 +1,16 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+  <div class="cross-icon-container">
+    <i
+      class="fa-solid fa-x"
+      id="cross-icon"
+      (click)="this.sidebarService.closeSidebar()"
+    ></i>
+  </div>
+  <ul>
+    <li>Home</li>
+    <li>Experience</li>
+    <li>Projects</li>
+    <li>Education</li>
+    <li>Contacts</li>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+.sidebar {
+  width: 150px;
+  height: 100vh;
+  background-color: rgb(160, 122, 122);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px;
+}
+.sidebar ul {
+  margin: 0;
+}
+.sidebar li {
+  list-style-type: none;
+  margin: 1rem auto;
+}
+.cross-icon-container {
+  text-align: right;
+}
+#cross-icon {
+  margin: 0;
+  padding: 0.5rem;
+}

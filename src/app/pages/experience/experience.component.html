@@ -1,27 +1,22 @@
-<section id="education" class="education">
-  <div class="education-container container">
+<section id="experience" class="education">
+  <div class="exp-container container">
     <h2 class="title">Experience</h2>
-    <div class="ed-card-group">
-      <div class="ed-info">
-        @for(edu of experienceList; track $index){
-        <div class="ed-card">
+    <div class="exp-card-group">
+      <div class="exp-info">
+        @for(exp of experienceList; track $index){
+        <div class="exp-card">
           <p>
-            <span class="qual ed-details">{{ edu.programme }}</span> in
-            <span class="stream ed-details">{{ edu.specialization }}</span
-            ><br /><span class="duration">{{ edu.duration }}</span>
+            <span class="qual exp-details">{{ exp.programme }}</span> in
+            <span class="stream exp-details">{{ exp.specialization }}</span
+            ><br /><span class="duration">{{ exp.duration }}</span>
           </p>
           <br />
           <p>
-            {{ edu.institution }}
+            {{ exp.institution }}
           </p>
         </div>
         }
       </div>
-      <img
-        src="/pictures/IMG_20241113_172013~.jpg"
-        alt="profile-picture2"
-        class="profile-picture"
-      />
     </div>
   </div>
 </section>
