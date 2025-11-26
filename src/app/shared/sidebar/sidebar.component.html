@@ -7,10 +7,16 @@
     ></i>
   </div>
   <ul>
-    <li>Home</li>
-    <li>Experience</li>
-    <li>Projects</li>
-    <li>Education</li>
-    <li>Contacts</li>
+    <li
+      routerLink="/about"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </li>
+    <li routerLink="/experience" routerLinkActive="active">Experience</li>
+    <li routerLink="/projects" routerLinkActive="active">Projects</li>
+    <li routerLink="/education" routerLinkActive="active">Education</li>
+    <li routerLink="/contacts" routerLinkActive="active">Contacts</li>
   </ul>
 </div>
