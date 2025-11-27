@@ -1,1 +1,22 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+  <div class="cross-icon-container">
+    <i
+      class="fa-solid fa-x"
+      id="cross-icon"
+      (click)="this.sidebarService.closeSidebar()"
+    ></i>
+  </div>
+  <ul>
+    <li
+      routerLink="/about"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </li>
+    <li routerLink="/experience" routerLinkActive="active">Experience</li>
+    <li routerLink="/projects" routerLinkActive="active">Projects</li>
+    <li routerLink="/education" routerLinkActive="active">Education</li>
+    <li routerLink="/contacts" routerLinkActive="active">Contacts</li>
+  </ul>
+</div>
