@@ -1,0 +1,118 @@
+import { Projects } from '../../app/models/Projects';
+
+export class ProjectsData {
+  static projects: Projects[] = [
+    {
+      id: 0,
+      imgUrl: '/projects-screenshot/Screenshot (255).png',
+      title: 'Housing',
+      url: 'https://aj-housings.netlify.app/',
+      sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    },
+    {
+      id: 1,
+      imgUrl: '/projects-screenshot/Screenshot (44).png',
+      title: 'Bearded Doodler',
+      url: 'https://arjunsemwal02.github.io/BeardedDoodler/',
+      sourceCode: 'https://github.com/ArjunSemwal02/BeardedDoodler.git',
+    },
+    {
+      id: 2,
+      imgUrl: '/projects-screenshot/Screenshot (45).png',
+      title: 'Sorted tables',
+      url: 'https://arjunsemwal02.github.io/Sorted-Table/',
+      sourceCode: 'https://github.com/ArjunSemwal02/Sorted-Table.git',
+    },
+    {
+      id: 3,
+      imgUrl: '/projects-screenshot/Screenshot (59).png',
+      title: 'Stream Vids',
+      url: 'https://arjunsemwal02.github.io/Stream-Vids/',
+      sourceCode: 'https://github.com/ArjunSemwal02/Stream-Vids.git',
+    },
+    {
+      id: 4,
+      imgUrl: '/projects-screenshot/Screenshot (60).png',
+      title: 'Shopping Cart',
+      url: 'https://arjunsemwal02.github.io/Shopping-Cart/',
+      sourceCode: 'https://github.com/ArjunSemwal02/Shopping-Cart.git',
+    },
+    // {
+    //   id: 5,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: '/projects-screenshot/Screenshot (255).png',
+    //   title: 'Housing',
+    //   url: 'https://aj-housings.netlify.app/',
+    //   sourceCode: 'https://github.com/ArjunSemwal02/Housing.git',
+    // },
+  ];
+}

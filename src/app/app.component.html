@@ -1,2 +1,11 @@
 <app-navbar />
+<div class="sidebar-wrapper" [class.open]="isSidebarOpen()">
+  <app-sidebar></app-sidebar>
+</div>
+<div
+  class="overlay"
+  [class.show]="isSidebarOpen()"
+  (click)="isSidebarOpen.set(false)"
+></div>
+
 <router-outlet />

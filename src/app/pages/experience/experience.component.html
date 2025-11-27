@@ -1,1 +1,22 @@
-<p>experience works!</p>
+<section id="experience" class="experience">
+  <div class="exp-container container">
+    <h2 class="title">Experience</h2>
+    <div class="exp-card-group">
+      <div class="exp-info">
+        @for(exp of experienceList; track $index){
+        <div class="exp-card">
+          <p>
+            <span class="qual exp-details">{{ exp.programme }}</span> in
+            <span class="stream exp-details">{{ exp.specialization }}</span
+            ><br /><span class="duration">{{ exp.duration }}</span>
+          </p>
+          <br />
+          <p>
+            {{ exp.institution }}
+          </p>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

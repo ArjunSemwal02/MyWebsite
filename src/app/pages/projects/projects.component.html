@@ -2,17 +2,18 @@
   <div class="projects-container container">
     <h2 class="title">Recently created Web-Apps</h2>
     <div class="projects-group">
-      @for (pr of projects$; track $index) {
+      @for(pr of projects$ | paginate: { itemsPerPage: 4, currentPage: p };
+      track $index) {
       <div class="app-card">
-        <p class="app-title">{{ pr.title }}</p>
         <img [src]="pr.imgUrl" [alt]="pr.title" class="app-shot" />
+        <p class="app-title">{{ pr.title }}</p>
         <div class="btn-group">
           <a [href]="pr.url" target="_blank"><button>Live</button></a>
           <a [href]="pr.sourceCode" target="_blank"><button>Github</button></a>
         </div>
       </div>
       }
-      <div class="app-card">
+      <!-- <div class="app-card">
         <p class="app-title">Stream-Vids</p>
         <img
           src="assets/projects-screenshot/Screenshot (59).png"
@@ -127,7 +128,7 @@
             ><button>Github</button></a
           >
         </div>
-      </div>
+      </div> -->
       <!-- <div class="app-card">
                     <p class="app-title">Text Animation</p>
                     <img src="assets/projects-screenshot/Screenshot (32).png" alt="app-2" class="app-shot">
@@ -169,5 +170,48 @@
                     </div>
                 </div> -->
     </div>
+    <pagination-controls
+      (pageChange)="p = $event"
+      previousLabel="Prev"
+      nextLabel="Next"
+    >
+    </pagination-controls>
+  </div>
+</section>
+
+<section class="carousel-section">
+  <h2 class="title">Recently created Web-Apps</h2>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <div
+        class="carousel-item"
+        *ngFor="let pr of projects$; let i = index"
+        [ngClass]="{
+          active: i === currentIndex,
+          prev:
+            i === currentIndex - 1 ||
+            (currentIndex === 0 && i === images.length - 1),
+          next:
+            i === currentIndex + 1 ||
+            (currentIndex === images.length - 1 && i === 0)
+        }"
+      >
+        <!-- <img [src]="img" /> -->
+        <div class="app-card">
+          <img [src]="pr.imgUrl" [alt]="pr.title" class="app-shot" />
+          <p class="app-title">{{ pr.title }}</p>
+          <div class="btn-group">
+            <a [href]="pr.url" target="_blank"><button>Live</button></a>
+            <a [href]="pr.sourceCode" target="_blank"
+              ><button>Github</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav left" (click)="prevSlide()">&#10094;</button>
+    <button class="nav right" (click)="nextSlide()">&#10095;</button>
   </div>
 </section>
