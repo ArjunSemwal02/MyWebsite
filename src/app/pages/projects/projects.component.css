@@ -5,6 +5,7 @@
 .carousel-section {
   display: none;
   margin: auto;
+  text-align: center;
 }
 .carousel-container {
   position: relative;
@@ -79,7 +80,10 @@
     display: none;
   }
   .carousel-section {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 769px) {

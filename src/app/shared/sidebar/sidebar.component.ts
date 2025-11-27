@@ -11,7 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class SidebarComponent {
   sidebarService = inject(SidebarService);
 
-  activeItem = 'home';
+  activeItem = 'about';
 
   setActive(item: string) {
     this.activeItem = item;
