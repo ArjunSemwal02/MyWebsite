@@ -576,9 +576,7 @@ header #menu-icon {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
-  .app-card {
-    padding: 0.5rem;
-  }
+
   .ed-card {
     margin: auto 0.5rem;
     padding: auto 1rem;
@@ -592,5 +590,19 @@ header #menu-icon {
   }
   .duration {
     font-size: 1rem;
+  }
+
+  .app-card {
+    border-radius: 30px;
+  }
+  .app-card button {
+    padding: 0;
+    margin: 0;
+    width: 70px;
+  }
+  .app-card .btn-group {
+    margin: 15px auto;
+    display: flex;
+    gap: 10px;
   }
 }
