@@ -4,12 +4,16 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
 export class SidebarComponent {
   sidebarService = inject(SidebarService);
 
-  closeSidebar() {}
+  activeItem = 'home';
+
+  setActive(item: string) {
+    this.activeItem = item;
+  }
 }

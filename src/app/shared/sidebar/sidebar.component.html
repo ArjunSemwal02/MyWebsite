@@ -6,8 +6,8 @@
       (click)="this.sidebarService.closeSidebar()"
     ></i>
   </div>
-  <ul>
-    <li
+  <ul class="sidebar-links">
+    <!-- <li
       routerLink="/about"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
@@ -17,6 +17,34 @@
     <li routerLink="/experience" routerLinkActive="active">Experience</li>
     <li routerLink="/projects" routerLinkActive="active">Projects</li>
     <li routerLink="/education" routerLinkActive="active">Education</li>
-    <li routerLink="/contacts" routerLinkActive="active">Contacts</li>
+    <li routerLink="/contacts" routerLinkActive="active">Contacts</li> -->
+
+    <li (click)="setActive('about')" [class.active]="activeItem === 'about'">
+      <a href="#about">About</a>
+    </li>
+    <li
+      (click)="setActive('experience')"
+      [class.active]="activeItem === 'experience'"
+    >
+      <a href="#experience">Experience</a>
+    </li>
+    <li
+      (click)="setActive('projects')"
+      [class.active]="activeItem === 'projects'"
+    >
+      <a href="#projects">Projects</a>
+    </li>
+    <li
+      (click)="setActive('education')"
+      [class.active]="activeItem === 'education'"
+    >
+      <a href="#education">Education</a>
+    </li>
+    <li
+      (click)="setActive('contacts')"
+      [class.active]="activeItem === 'contacts'"
+    >
+      <a href="#contacts">Contacts</a>
+    </li>
   </ul>
 </div>
